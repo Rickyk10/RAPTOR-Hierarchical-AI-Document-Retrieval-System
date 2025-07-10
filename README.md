@@ -2,20 +2,20 @@
 ## 🚀 Overview
 This project implements a Retrieval-Augmented Generation (RAG) system leveraging the innovative RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) framework. RAPTOR creates a multi-layered, hierarchical representation of documents, allowing for nuanced retrieval strategies that can retrieve information at varying levels of granularity – from highly specific details to broad, abstract summaries.
 
-The system provides two powerful retrieval modes:
+### The system provides two powerful retrieval modes:
 
-Tree Traversal Retrieval: Intelligently navigates the document hierarchy to find the most relevant context, descending to finer details only when necessary.
+###Tree Traversal Retrieval: Intelligently navigates the document hierarchy to find the most relevant context, descending to finer details only when necessary.
 
-Collapsed Tree Retrieval: Flattens the entire hierarchy into a single vector space for direct similarity search, offering a straightforward and often highly effective retrieval approach.
+###Collapsed Tree Retrieval: Flattens the entire hierarchy into a single vector space for direct similarity search, offering a straightforward and often highly effective retrieval approach.
 
 This project aims to demonstrate the power of hierarchical document representation for robust and efficient RAG applications, enhancing the accuracy and relevance of LLM-generated answers.
 
-(Optional: Link to a demo video/GIF demonstrating the system in action - highly recommended for impact!)
 
-✨ Features
+
+## ✨ Features
 RAPTOR Hierarchy Generation: Automatically chunks documents, embeds them, and recursively generates multi-level summaries, creating a rich, tree-like knowledge structure.
 
-Two Retrieval Strategies:
+###Two Retrieval Strategies:
 
 Tree Traversal: Smart, depth-first search for context, ideal for queries requiring specific detail or broad overview depending on context sufficiency.
 
