@@ -1,4 +1,4 @@
-RAPTOR RAG System
+#RAPTOR RAG System
 🚀 Overview
 This project implements a Retrieval-Augmented Generation (RAG) system leveraging the innovative RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) framework. RAPTOR creates a multi-layered, hierarchical representation of documents, allowing for nuanced retrieval strategies that can retrieve information at varying levels of granularity – from highly specific details to broad, abstract summaries.
 
