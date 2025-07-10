@@ -11,7 +11,7 @@ The system provides two powerful retrieval modes:
 
 This project aims to demonstrate the power of hierarchical document representation for robust and efficient RAG applications, enhancing the accuracy and relevance of LLM-generated answers.
 
-> _(Optional: Link to a demo video/GIF demonstrating the system in action - highly recommended for impact!)_
+
 
 ## ✨ Features
 
