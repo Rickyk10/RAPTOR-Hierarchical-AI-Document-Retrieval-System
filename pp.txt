@@ -1,0 +1,52 @@
+ "Compile time"
+```python
+
+graph = graph_builder.compile( # (1)!
+    # highlight-next-line
+    interrupt_before=["node_a"], # (2)!
+    # highlight-next-line
+    interrupt_after=["node_b", "node_c"], # (3)!
+    checkpointer=checkpointer, # (4)!
+)
+
+config = {
+    "configurable": {
+        "thread_id": "some_thread"
+    }
+}
+
+# Run the graph until the breakpoint
+graph.invoke(inputs, config=thread_config) # (5)!
+
+# Resume the graph
+graph.invoke(None, config=thread_config) # (6)!
+```
+
+
+=== "Run time"
+```python
+# highlight-next-line
+graph.invoke( # (1)!
+    inputs, 
+    # highlight-next-line
+    interrupt_before=["node_a"], # (2)!
+    # highlight-next-line
+    interrupt_after=["node_b", "node_c"] # (3)!
+    config={
+        "configurable": {"thread_id": "some_thread"}
+    }, 
+)
+
+config = {
+    "configurable": {
+        "thread_id": "some_thread"
+    }
+}
+
+# Run the graph until the breakpoint
+graph.invoke(inputs, config=config) # (4)!
+
+# Resume the graph
+graph.invoke(None, config=config) # (5)!
+```
+
