@@ -24,7 +24,7 @@ This project aims to demonstrate the power of hierarchical document representati
 - **Asynchronous API**: Built with FastAPI for a high-performance, asynchronous web API.
 - **Docker Support**: Easily containerize and deploy the application.
 
-## 🧠 How RAPTOR Works (Simplified)
+## 🧠 How RAPTOR Works
 
 RAPTOR builds a "tree of summaries" from your documents:
 
